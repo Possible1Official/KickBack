@@ -1,3 +1,30 @@
 @font-face{font-family:GamePixel;src:url('assets/game-font.ttf') format('truetype');font-display:swap}
 html body,body button,body input,body kbd,body small,body p,body h1,body h2,body h3,body label,body dl,body dd,body output{font-family:GamePixel,monospace!important;font-weight:400!important;line-height:1.8;letter-spacing:0!important}
 body .menu-button{font-size:11px;padding:8px}body .title-nav{gap:5px}body .main-logo{width:49%}body .title-screen{padding-top:3%}body .tagline{font-size:8px;margin:8px 0 14px}body .music-note{font-size:7px;margin-top:10px}body .menu-panel p{font-size:9px}body h1{font-size:18px!important}body .mission h2{font-size:14px}body .mission p{font-size:8px}body .setting{font-size:8px}body .map-card b{font-size:9px!important}body .map-card small{font-size:7px!important}body #guns button{min-width:0;max-width:125px;padding:5px}body #guns b{font-size:7px}body #guns small{font-size:6px}body .charge{min-width:130px}body .telemetry small{font-size:6px}body .pause-panel h2{font-size:22px}body .menu-panel{max-height:95%;overflow:auto}#campaign-levels{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:15px 0}#campaign-levels button{font-size:7px;padding:9px;text-align:left}.armory-panel{width:740px}.task-row{padding:10px;border-bottom:1px solid #51546b}.task-row b{font-size:9px;color:#a8f7da}.task-row p{font-size:8px;margin:7px 0}.story-cast{position:absolute;inset:0;overflow:hidden;pointer-events:none}#story-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.6)}.story-cast img{position:absolute;bottom:26%;height:160px;image-rendering:pixelated;animation:cast-idle 1.5s ease-in-out infinite}.cast-player{left:18%}.cast-copy{left:65%;filter:hue-rotate(150deg) drop-shadow(0 0 15px #ff4c71)}.cast-staff{left:45%}.story-caption{position:absolute;bottom:3%;left:5%;right:5%;background:#10152aee;border:2px solid #b1a4db;padding:18px}.story-caption p{font-size:11px;max-width:1000px}.story-caption small{font-size:8px;color:#a5ffe0}.story-caption button{font-size:8px;margin:0 10px 0 0}.story-caption h1{font-size:14px!important;margin-top:8px}#story-screen[data-scene="breach"] .cast-copy{animation:copy-charge 4s linear infinite}#story-screen[data-scene="breach"] .cast-staff{animation:staff-fall 4s linear infinite}#story-screen[data-scene="survivor"] .cast-copy,#story-screen[data-scene="survivor"] .cast-staff{opacity:.15}#story-screen[data-scene="departure"] .cast-player{animation:survivor-walk 6s linear infinite}#story-screen[data-scene="experiment"] .cast-copy{animation:copy-appear 3s ease-in-out infinite}@keyframes cast-idle{50%{transform:translateY(-12px)}}@keyframes copy-charge{0%{transform:translateX(180px)}60%,100%{transform:translateX(-180px)}}@keyframes staff-fall{0%,50%{transform:rotate(0)}75%,100%{transform:rotate(90deg);opacity:.25}}@keyframes copy-appear{50%{opacity:.1;filter:hue-rotate(200deg)}}@keyframes survivor-walk{to{transform:translateX(500px)}}
+
+/* Home actions have a clear size hierarchy, independent of the compact HUD. */
+body #home-screen .title-nav{width:clamp(290px,34vw,430px);gap:12px;justify-items:center}
+body #home-screen .menu-button{width:86%;min-height:54px;padding:12px 24px;font-size:15px;border-radius:7px;border-color:#91aac77a;background:linear-gradient(120deg,#20263bea,#27223eea);box-shadow:0 5px 0 #090617,0 12px 26px #08061755;transition:background .15s,transform .15s,border-color .15s}
+body #home-screen #story-play{width:100%;min-height:78px;font-size:23px;padding:16px 30px;color:#caffea;border:2px solid #9cf0d7;background:linear-gradient(115deg,#285a59f2,#393167f2);box-shadow:0 6px 0 #10172b,0 0 28px #8de3d21c}
+body #home-screen .menu-button:hover,body #home-screen .menu-button:focus-visible{transform:translateY(-2px);border-color:#b6ffe9;background:#365557}
+body #home-screen .music-note{font-size:8px;margin-top:18px}
+.music-toggle{position:absolute;top:20px;right:22px;z-index:2;display:flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:10px 14px;border:1px solid #8ba4ba88;border-radius:7px;background:#11162de8;color:#b8ffe8;font-size:9px;box-shadow:0 4px 14px #0004}
+.music-toggle svg{width:22px;height:22px;overflow:visible;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.music-toggle .mute-mark{display:none}.music-toggle[aria-pressed="true"]{color:#c1bfd4}.music-toggle[aria-pressed="true"] .sound-waves{display:none}.music-toggle[aria-pressed="true"] .mute-mark{display:block}
+#paused>.music-toggle{min-width:0;margin:0;display:flex}
+@media(max-width:950px),(max-height:650px){
+ body #home-screen .title-nav{width:clamp(250px,36vw,360px);gap:9px}
+ body #home-screen .menu-button{min-height:44px;padding:8px 18px;font-size:12px}
+ body #home-screen #story-play{min-height:60px;padding:10px 22px;font-size:18px}
+ body #home-screen .main-logo{width:45%}
+ .music-toggle{top:12px;right:14px;padding:8px 11px;font-size:8px;gap:7px}
+}
+@media(max-width:650px),(max-height:400px){
+ body #home-screen{padding-top:2%}
+ body #home-screen .title-nav{width:230px;gap:7px}
+ body #home-screen .menu-button{min-height:36px;padding:6px 16px;font-size:10px}
+ body #home-screen #story-play{min-height:46px;padding:7px 20px;font-size:15px}
+ body #home-screen .tagline{margin:4px 0 10px;font-size:6px}
+ body #home-screen .music-note{margin-top:10px;font-size:6px}
+ .music-toggle{top:8px;right:10px;min-height:36px;padding:6px 9px;font-size:7px;gap:6px}.music-toggle svg{width:18px;height:18px}
+}
