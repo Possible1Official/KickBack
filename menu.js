@@ -11,7 +11,7 @@ function syncAudio(){music.volume=preferences.music/100;window.KICKBACK?.setSfxV
 function show(id){screen=id;all('.screen').forEach(el=>el.hidden=el.id!==id);if(id==='maps-screen')updateMapLabel();const target=$('#'+id)?.querySelector('button');target?.focus({preventScroll:true});}
 function updateMapLabel(){const card=$('[data-map].active b');$('#selected-map').textContent='SELECTED: '+(card?.textContent||'Moonlit ruins').toUpperCase();}
 function syncSettings(){for(const key of ['sfx','music']){all(`[data-setting="${key}"]`).forEach(el=>el.value=preferences[key]);all(`[data-value="${key}"]`).forEach(el=>el.textContent=preferences[key]+'%');}$('#assist').checked=preferences.assist;window.KICKBACK?.setAssist(preferences.assist);syncAudio();}
-all('[data-screen]').forEach(button=>button.onclick=()=>show(button.dataset.screen));$('#open-maps').onclick=()=>show('maps-screen');
+all('[data-screen]').forEach(button=>button.onclick=()=>show(button.dataset.screen));
 all('[data-map]').forEach(button=>button.addEventListener('click',updateMapLabel));
 all('[data-setting]').forEach(input=>input.addEventListener('input',()=>{preferences[input.dataset.setting]=Number(input.value);syncSettings();save();}));
 $('#assist').addEventListener('change',()=>{preferences.assist=$('#assist').checked;window.KICKBACK?.setAssist(preferences.assist);save();});
