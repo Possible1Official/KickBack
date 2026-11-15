@@ -1,0 +1,788 @@
+[
+  {
+    "file": "assets/industrial/platformIndustrial_001.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_001.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_002.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_002.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_003.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_003.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_004.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_004.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_005.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_005.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_006.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_006.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_007.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_007.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_008.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_008.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_009.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_009.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_010.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_010.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_011.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_011.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_012.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_012.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_013.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_013.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_014.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_014.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_015.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_015.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_016.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_016.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_017.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_017.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_018.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_018.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_019.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_019.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_020.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_020.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_021.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_021.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_022.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_022.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_023.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_023.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_024.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_024.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_025.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_025.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_026.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_026.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_027.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_027.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_028.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_028.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_029.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_029.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_030.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_030.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_031.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_031.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_032.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_032.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_033.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_033.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_034.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_034.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_035.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_035.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_036.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_036.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_037.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_037.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_038.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_038.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_039.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_039.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_040.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_040.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_041.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_041.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_042.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_042.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_043.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_043.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_044.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_044.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_045.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_045.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_046.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_046.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_047.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_047.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_048.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_048.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_049.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_049.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_050.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_050.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_051.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_051.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_052.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_052.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_053.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_053.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_054.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_054.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_055.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_055.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_056.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_056.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_057.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_057.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_058.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_058.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_059.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_059.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_060.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_060.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_061.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_061.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_062.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_062.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_063.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_063.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_064.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_064.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_065.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_065.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_066.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_066.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_067.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_067.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_068.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_068.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_069.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_069.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_070.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_070.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_071.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_071.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_072.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_072.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_073.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_073.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_074.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_074.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_075.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_075.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_076.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_076.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_077.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_077.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_078.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_078.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_079.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_079.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_080.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_080.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_081.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_081.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_082.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_082.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_083.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_083.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_084.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_084.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_085.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_085.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_086.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_086.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_087.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_087.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_088.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_088.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_089.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_089.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_090.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_090.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_091.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_091.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_092.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_092.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_093.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_093.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_094.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_094.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_095.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_095.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_096.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_096.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_097.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_097.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_098.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_098.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_099.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_099.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_100.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_100.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_101.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_101.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_102.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_102.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_103.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_103.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_104.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_104.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_105.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_105.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_106.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_106.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_107.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_107.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_108.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_108.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_109.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_109.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_110.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_110.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_111.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_111.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/industrial/platformIndustrial_112.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Platformer%20Pack%20Industrial/Retina/platformIndustrial_112.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/robot.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Topdown%20Shooter/Robot%201/robot1_stand.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/moon.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Background%20Elements/moon_full.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/mountains.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Background%20Elements/Flat/pointy_mountains.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/barrel.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Topdown%20Tanks%20Remastered/barrelRed_side.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/crate.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Topdown%20Tanks%20Remastered/crateMetal.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/gun0.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Desert%20Shooter%20Pack/Weapons/Tiles/tile_0000.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/gun1.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Desert%20Shooter%20Pack/Weapons/Tiles/tile_0001.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/gun2.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Desert%20Shooter%20Pack/Weapons/Tiles/tile_0002.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/gun3.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Desert%20Shooter%20Pack/Weapons/Tiles/tile_0003.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/gun4.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Desert%20Shooter%20Pack/Weapons/Tiles/tile_0004.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/gun5.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Desert%20Shooter%20Pack/Weapons/Tiles/tile_0005.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/gun6.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Desert%20Shooter%20Pack/Weapons/Tiles/tile_0006.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/gun7.png",
+    "source": "https://raw.githubusercontent.com/shorepine/kenney/3694c6879e487c108f55677be7dd2ca75b07cc3b/2d/Desert%20Shooter%20Pack/Weapons/Tiles/tile_0007.png",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/laserSmall_000.ogg",
+    "source": "https://raw.githubusercontent.com/GeorgeQLe/assets-sfx-combat/main/assets/kenney/sci-fi-sounds/Audio/laserSmall_000.ogg",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/laserLarge_000.ogg",
+    "source": "https://raw.githubusercontent.com/GeorgeQLe/assets-sfx-combat/main/assets/kenney/sci-fi-sounds/Audio/laserLarge_000.ogg",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/laserRetro_000.ogg",
+    "source": "https://raw.githubusercontent.com/GeorgeQLe/assets-sfx-combat/main/assets/kenney/sci-fi-sounds/Audio/laserRetro_000.ogg",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/explosionCrunch_000.ogg",
+    "source": "https://raw.githubusercontent.com/GeorgeQLe/assets-sfx-combat/main/assets/kenney/sci-fi-sounds/Audio/explosionCrunch_000.ogg",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/forceField_000.ogg",
+    "source": "https://raw.githubusercontent.com/GeorgeQLe/assets-sfx-combat/main/assets/kenney/sci-fi-sounds/Audio/forceField_000.ogg",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  },
+  {
+    "file": "assets/LICENSE-audio.txt",
+    "source": "https://raw.githubusercontent.com/GeorgeQLe/assets-sfx-combat/main/LICENSES/kenney-sci-fi-sounds-license.txt",
+    "author": "Kenney",
+    "license": "CC0-1.0"
+  }
+]

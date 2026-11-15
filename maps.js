@@ -1,0 +1,11 @@
+/* Four new hand-authored arena layouts. Coordinates already reserve the HUD strip. */
+window.RECOIL_LEVELS.push(
+ {name:'Central City',theme:'central',tag:'CITY',width:1800,height:720,gravity:430,scroll:true,spawn:[110,535],exit:[1690,540],
+ platforms:[[0,600,1800,50],[0,0,24,650],[1776,0,24,650],[0,0,1800,20],[300,505,200,28],[660,415,240,28],[1030,515,200,28],[1380,430,220,28]],doors:[[1260,430,24,170]],switches:[[1140,450]],breakables:[[500,505,48,28],[548,505,48,28]],movers:[[900,510,120,24,70,0,.9]],objects:[[750,380,'barrel'],[390,470,'crate']],fans:[],labels:[]},
+ {name:'Industrial complex',theme:'industrial',tag:'FACTORY',width:1900,height:720,gravity:470,scroll:true,spawn:[110,535],exit:[1790,535],
+ platforms:[[0,600,1900,50],[0,0,24,650],[1876,0,24,650],[0,0,1900,20],[250,510,220,28],[670,390,210,28],[1070,510,240,28],[1510,410,210,28]],doors:[[1390,410,24,190]],switches:[[1250,445]],breakables:[[470,510,48,28],[518,510,48,28]],movers:[[530,510,125,24,0,-110,.8],[1330,430,130,24,0,85,.8]],objects:[[740,355,'barrel'],[1140,475,'crate'],[1600,375,'barrel']],fans:[{x:900,y:420,w:140,h:180,fx:0,fy:-700}],labels:[]},
+ {name:'Neon City',theme:'neon',tag:'SKYLINE',width:2200,height:720,gravity:400,scroll:true,spawn:[110,535],exit:[2090,535],
+ platforms:[[0,600,2200,50],[0,0,24,650],[2176,0,24,650],[0,0,2200,20],[300,500,210,28],[680,420,210,28],[1100,500,210,28],[1510,400,240,28],[1880,505,180,28]],doors:[[1770,410,24,190]],switches:[[1620,330]],breakables:[[510,500,48,28],[558,500,48,28]],movers:[[900,475,140,24,90,-45,.8],[1320,410,140,24,60,45,.7]],objects:[[760,385,'barrel'],[1180,465,'crate'],[1960,470,'barrel']],fans:[{x:1350,y:470,w:140,h:130,fx:0,fy:-620}],labels:[]},
+ {name:'Moon graveyard',theme:'graveyard',tag:'GRAVEYARD',width:1700,height:720,gravity:300,scroll:true,spawn:[110,535],exit:[1590,535],
+ platforms:[[0,600,1700,50],[0,0,24,650],[1676,0,24,650],[0,0,1700,20],[300,505,180,28],[650,425,210,28],[1000,500,220,28],[1380,420,180,28]],doors:[[1250,430,24,170]],switches:[[1120,435]],breakables:[[480,505,48,28],[528,505,48,28]],movers:[[860,495,130,24,0,-75,.9]],objects:[[730,390,'barrel'],[1060,465,'crate']],fans:[{x:570,y:470,w:120,h:130,fx:0,fy:-450}],labels:[]}
+);
