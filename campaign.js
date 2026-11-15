@@ -6,7 +6,7 @@ const names=['Awakening','Failed Reconstruction','No Survivors','Weapons Archive
 let data={cleared:[],unlocked:[true,false,false,false,false,false,false],kills:0,bestHits:0,safeKills:0,bestSafe:0,airKills:0,quick:false,banks:0,advanced:false,intro:false};
 try{data={...data,...JSON.parse(localStorage.getItem(key)||'{}')};}catch{}
 let active=false,current=0,hitStreak=0,bankStreak=0,recent=[],levelDamaged=false,pistolOnly=true,scene=0;
-const tasks=['Available immediately','20 kills + 8 consecutive hits','3 kills within 5 seconds','15 kills without damage (across levels)','40 kills, including 10 airborne kills','3 consecutive bank-shot hits in level 7+ (loan weapon)','Defeat the advanced copy with only the Pistol, without damage'];
+const tasks=['Available immediately','20 kills + 8 consecutive hits','3 kills within 5 seconds','15 kills without damage (across levels)','40 kills, including 10 airborne kills','3 consecutive bank-shot hits in level 7+ (loan weapon)','Clear Level 9 using only the Pistol, without taking damage'];
 const gunNames=['Pistol','Revolver','Shotgun','SMG','Assault Rifle','Ricochet Rifle','Heavy Gun'];
 function save(){try{localStorage.setItem(key,JSON.stringify(data));}catch{}}
 function render(){
@@ -35,8 +35,8 @@ window.Campaign={get active(){return active;},begin(i,mode){if(mode==='menu'){ac
  weaponUsed(i){if(active&&i!==0)pistolOnly=false;},hurt(){if(!active)return;levelDamaged=true;data.safeKills=0;save();},
  hit(b){if(!active)return;hitStreak++;data.bestHits=Math.max(data.bestHits,hitStreak);if(current>=6&&b.bounced){bankStreak++;data.banks=Math.max(data.banks,bankStreak);}else bankStreak=0;check();},
  miss(){if(active){hitStreak=0;bankStreak=0;}},
- kill(e,g,vy){if(!active)return;data.kills++;data.safeKills++;data.bestSafe=Math.max(data.bestSafe,data.safeKills);if(Math.abs(vy)>20)data.airKills++;const now=performance.now()/1000;recent.push(now);recent=recent.filter(t=>now-t<=5);if(recent.length>=3)data.quick=true;if(e.advanced&&g===0&&pistolOnly&&!levelDamaged)data.advanced=true;check();},
- clear(i){if(!active)return;if(!data.cleared.includes(i))data.cleared.push(i);save();render();if(i===9){$('#winText').textContent=endingReady()?'All levels and tasks complete.':'Campaign cleared! Replay levels to finish the remaining Armory tasks.';}},
+ kill(e,g,vy){if(!active)return;data.kills++;data.safeKills++;data.bestSafe=Math.max(data.bestSafe,data.safeKills);if(Math.abs(vy)>20)data.airKills++;const now=performance.now()/1000;recent.push(now);recent=recent.filter(t=>now-t<=5);if(recent.length>=3)data.quick=true;check();},
+ clear(i){if(!active)return;if(i===8&&pistolOnly&&!levelDamaged)data.advanced=true;if(!data.cleared.includes(i))data.cleared.push(i);check();if(i===9){$('#winText').textContent=endingReady()?'All levels and tasks complete.':'Campaign cleared! Replay levels to finish the remaining Armory tasks.';}},
  next(){if(endingReady()){active=false;window.KICKBACK.previewMenu();show('ending-screen');return;}if(current<9)start(current+1);else{active=false;window.KICKBACK.previewMenu();show('levels-screen');}},
  snapshot:()=>({active,current,data:JSON.parse(JSON.stringify(data)),endingReady:endingReady()})};
 $('#story-play').onclick=()=>{if(endingReady()){show('ending-screen');return;}if(!data.intro)intro();else{render();show('levels-screen');}};

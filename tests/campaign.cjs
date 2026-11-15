@@ -34,10 +34,15 @@ c.Campaign.begin(1,'play');for(let i=0;i<7;i++){clock++;c.Campaign.kill({},0,50)
 c.Campaign.hurt();assert.equal(c.Campaign.snapshot().data.safeKills,0);
 for(let i=0;i<30;i++){clock+=.1;c.Campaign.kill({},0,50)}assert(c.Campaign.snapshot().data.unlocked[1]);assert(c.Campaign.snapshot().data.unlocked[2]);assert(c.Campaign.snapshot().data.unlocked[4]);
 c.Campaign.begin(6,'play');assert(c.Campaign.allowed(5),'loan available');for(let i=0;i<3;i++)c.Campaign.hit({bounced:true});assert(c.Campaign.snapshot().data.unlocked[5]);
-c.Campaign.begin(8,'play');c.Campaign.kill({advanced:true},0,0);assert(c.Campaign.snapshot().data.unlocked[6]);
+c.Campaign.begin(8,'play');c.Campaign.kill({advanced:true},0,0);assert(!c.Campaign.allowed(6),'single advanced-copy kill does not finish the task');
+c.Campaign.hurt();c.Campaign.clear(8);assert(!c.Campaign.allowed(6),'damage disqualifies the run');
+c.Campaign.begin(8,'play');c.Campaign.weaponUsed(1);c.Campaign.clear(8);assert(!c.Campaign.allowed(6),'another weapon disqualifies the run');
+c.Campaign.begin(7,'play');c.Campaign.clear(7);assert(!c.Campaign.allowed(6),'task requires Level 9');
+c.Campaign.begin(8,'play');c.Campaign.clear(8);assert(c.Campaign.allowed(6),'perfect Pistol clear unlocks Heavy Gun before final boss');
+c.Campaign.begin(9,'play');assert(c.Campaign.allowed(6),'Heavy Gun is available for the final boss');
 // Wave completion must wait at least two simulated seconds.
 t.loadLevel(0);t.enemies().forEach(e=>e.alive=false);t.tick(1.99);assert.equal(snap().state,'play');t.tick(.02);assert.equal(snap().state,'complete');
 // Final boss has radial and warned laser patterns.
 c.KICKBACK.startCampaign(9,4);assert.equal(snap().enemies[0].type,'boss');assert.equal(snap().enemies[0].maxHp,100);t.bossAttack(5.1);assert(snap().hostile.length>=16);for(let i=0;i<5;i++)t.tick(1);t.bossAttack(5.1);assert(t.getLaser()||snap().hostile.length>0);
 assert(!c.Campaign.snapshot().endingReady,'levels must also be cleared');for(let i=0;i<10;i++)c.Campaign.clear(i);assert(c.Campaign.snapshot().endingReady,'ending requires ten cleared levels AND all tasks');
-console.log('PASS: first Play intro, manual scene advancement, saved intro, story copy enemies, locked guns, 7 gun tasks, safe kills across levels, reset on damage, loan rifle, advanced-copy task, 2-second delay, crystal boss patterns, final completion gate.');
+console.log('PASS: first Play intro, manual scene advancement, saved intro, story copy enemies, locked guns, 7 gun tasks, safe kills across levels, reset on damage, loan rifle, perfect Level 9 Pistol task before final boss, 2-second delay, crystal boss patterns, final completion gate.');
