@@ -41,3 +41,5 @@ html,body{overscroll-behavior:none}#touch-actions,#mobile-tip{display:none}
  #touch-actions{width:140px;gap:6px;bottom:max(8px,env(safe-area-inset-bottom))}#touch-actions button{min-height:44px}.touch-weapons{gap:6px}#touch-gun{font-size:8px}.music-toggle{top:6px}
  .pause-panel .pause-settings{display:none}
 }
+@media(any-pointer:coarse){#arena-score{left:12px;top:104px;gap:0}#arena-score small{display:none}#arena-score strong{font-size:15px}#arena-score span{font-size:7px}}
+@media(any-pointer:coarse) and (orientation:portrait){#arena-score{top:165px}body #home-screen .main-logo{width:90%}body #home-screen .menu-button{min-height:48px}body #home-screen #story-play{min-height:64px}}

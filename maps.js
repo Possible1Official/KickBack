@@ -9,3 +9,9 @@ window.RECOIL_LEVELS.push(
  {name:'Moon graveyard',theme:'graveyard',tag:'GRAVEYARD',width:1700,height:720,gravity:300,scroll:true,spawn:[110,535],exit:[1590,535],
  platforms:[[0,600,1700,50],[0,0,24,650],[1676,0,24,650],[0,0,1700,20],[300,505,180,28],[650,425,210,28],[1000,500,220,28],[1380,420,180,28]],doors:[[1250,430,24,170]],switches:[[1120,435]],breakables:[[480,505,48,28],[528,505,48,28]],movers:[[860,495,130,24,0,-75,.9]],objects:[[730,390,'barrel'],[1060,465,'crate']],fans:[{x:570,y:470,w:120,h:130,fx:0,fy:-450}],labels:[]}
 );
+
+// Generated background art is visual scenery; existing industrial tiles define collisions.
+window.RECOIL_LEVELS.push({name:'Overgrown Reactor',theme:'reactor',tag:'REACTOR',width:2100,height:720,gravity:370,scroll:true,spawn:[110,535],exit:[1990,535],
+ platforms:[[0,600,2100,50],[0,0,24,650],[2076,0,24,650],[0,0,2100,20],[270,500,230,28],[650,410,220,28],[1030,500,240,28],[1460,390,240,28],[1810,500,180,28]],
+ doors:[[1740,430,24,170]],switches:[[1565,320]],breakables:[[500,500,48,28],[548,500,48,28],[1270,500,48,28]],movers:[[880,490,130,24,0,-95,.75],[1300,450,140,24,75,0,.7]],
+ objects:[[735,375,'barrel'],[1130,465,'crate'],[1880,465,'barrel']],fans:[{x:570,y:450,w:110,h:150,fx:0,fy:-590}],labels:[]});

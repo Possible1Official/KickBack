@@ -1,10 +1,18 @@
 # Kickback
 
-A browser action game where gun recoil is your movement engine. Play a ten-level story campaign or climb endless waves across seven arenas. No install, build step, or external runtime dependencies.
+A browser action game where gun recoil is your movement engine. Play a ten-level story campaign or climb endless waves across eight arenas. No install, build step, or external runtime dependencies.
 
 ## Run locally
 
 Serve this directory, for example with `python -m http.server 8000`, then open `http://localhost:8000`. Use a keyboard and mouse, or the mobile touch controls. Progress, settings, and arena records save in this browser's local storage.
+
+## Reactor update
+
+**ARENAS** on the home menu opens eight maps, including the new **Overgrown Reactor**. Its background is generated pixel art, exported as a 151 KB WebP; solid foreground platforms use existing industrial tile art. Source prompt and provenance are in `assets/generated/README.md`.
+
+In arena mode, a kill awards 100 points times your current combo. Defeat another enemy within four seconds to increase the multiplier up to x5. Taking damage, returning to the entrance, or letting the timer expire resets the combo. Pausing freezes it. Wave results include your score and best multiplier; personal best wave scores save per map and Flight Assist setting. Story progression and weapon challenges remain separate.
+
+Enemies now show a dashed amber aiming line for 0.65 seconds before firing. Their aim locks when the warning begins so you can dodge. Intact platforms and closed doors block their sight; destroyed cover and opened doors create new firing lanes. Cover also absorbs hostile bullets before player damage is tested.
 
 ## Phone and tablet controls
 

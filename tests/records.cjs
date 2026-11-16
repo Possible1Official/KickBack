@@ -11,3 +11,5 @@ r.begin(1,0,false);r.shot();r.finish(true);assert(!r.snapshot()['1-raw'],'story 
 r.begin(1,0,true);r.finish(false);assert(!r.snapshot()['1-raw'],'death cannot set a clear record');
 storage.set('kickback-arena-records-v1','broken JSON');assert.deepEqual(JSON.parse(JSON.stringify(boot().snapshot())),{});
 console.log('PASS: persistent records, unique-shot accuracy, fastest clean clears, rescue exclusion, separate assist records, story/death exclusion and corrupt storage recovery.');
+
+s.assist=true;s.score=1200;s.bestCombo=4;r=boot();r.begin(7,0,true);r.finish(true);assert.equal(r.snapshot()['7-assist'].bestScore,1200);assert(r.summary().includes('BEST x4'));s.score=200;r.begin(7,0,true);r.finish(true);assert.equal(r.snapshot()['7-assist'].bestScore,1200,'lower score cannot replace best');
