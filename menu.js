@@ -23,6 +23,6 @@ $('#fullscreen').onclick=()=>{if(document.fullscreenElement)document.exitFullscr
 function unlock(){unlocked=true;syncAudio();}
 document.addEventListener('pointerdown',unlock);document.addEventListener('keydown',e=>{if(e.code!=='Escape')unlock();if(e.code==='Escape'&&gameState==='menu'&&screen!=='home-screen')show('home-screen');});
 document.addEventListener('visibilitychange',syncAudio);
-window.KickbackShell={sync(state){gameState=state;$('#pause').hidden=state!=='play';if(state!=='play')$('#toast').classList.remove('show');syncAudio();},show,home(){show('home-screen');},snapshot:()=>({screen,gameState,musicPlaying:!music.paused,musicVolume:music.volume,musicMuted:isMusicMuted(),sfxVolume:preferences.sfx/100,loop:music.loop})};
+window.KickbackShell={sync(state){gameState=state;$('#pause').hidden=state!=='play';$('#touch-actions').hidden=state!=='play';$('#mobile-tip').hidden=state!=='play';if(state!=='play')$('#toast').classList.remove('show');syncAudio();},show,home(){show('home-screen');},snapshot:()=>({screen,gameState,musicPlaying:!music.paused,musicVolume:music.volume,musicMuted:isMusicMuted(),sfxVolume:preferences.sfx/100,loop:music.loop})};
 syncSettings();show('home-screen');
 })();

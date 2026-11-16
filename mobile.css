@@ -1,0 +1,43 @@
+/* Pointer Events prevent scrolling only on play surfaces; menu panels scroll. */
+#game,#touch-actions button{touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+html,body{overscroll-behavior:none}#touch-actions,#mobile-tip{display:none}
+#touch-stick{position:absolute;z-index:2;width:112px;height:112px;margin:-56px 0 0 -56px;border:2px solid #b5ffe7a8;border-radius:50%;background:#102c4059;box-shadow:inset 0 0 20px #8de3d218;pointer-events:none}
+#touch-knob{position:absolute;left:33px;top:33px;width:42px;height:42px;border:2px solid #c4ffed;border-radius:50%;background:#8de3d299;box-shadow:0 2px 14px #0006;will-change:transform}
+#touch-actions{position:absolute;z-index:2;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));width:152px;grid-template-columns:1fr 1fr;gap:8px;pointer-events:none}
+#touch-actions button{min-width:0;min-height:48px;font-size:9px;padding:8px 4px;border:1px solid #b1e4d5aa;border-radius:12px;background:#142638d9;pointer-events:auto;transform:none}
+#touch-actions button.held{background:#386c67;border-color:#c2ffeb}
+.touch-weapons{display:flex;grid-column:1/-1;gap:8px}.touch-weapons button{flex:1}
+#touch-gun{grid-column:1/-1;text-align:center;font-size:10px;color:#c4ffeb;text-shadow:0 1px 4px #000}
+#mobile-tip{position:absolute;bottom:12px;left:12px;pointer-events:none;color:#c1d9db;font-size:8px;max-width:45%;margin:0}#mobile-tip span{display:none}
+.touch-device #touch-actions{display:grid}.touch-device #mobile-tip{display:block}
+.touch-device #guns{display:none}.touch-device #pause{z-index:3;min-height:44px;top:12px;right:max(12px,env(safe-area-inset-right))}
+#menu,.overlay{z-index:4}
+@media(any-pointer:coarse){
+ #app{height:100dvh}#stage{max-height:100dvh;width:min(100vw,177.7778dvh)}
+ #touch-actions{display:grid}#mobile-tip{display:block}#guns{display:none!important}
+ #pause{z-index:3;top:max(10px,env(safe-area-inset-top));right:max(12px,env(safe-area-inset-right));min-height:44px;min-width:76px;font-size:9px}
+ #hud{padding:12px}.mission{max-width:65%}.mission small{font-size:7px}.mission h2{font-size:10px!important;margin:3px 0}.mission p,.telemetry{display:none}
+ .health-panel{top:12px;left:50%;width:110px}.health-panel small{display:none}.health-panel strong{font-size:9px;margin:0 0 4px}
+ .bottom{top:64px;left:12px;right:auto;bottom:auto;display:flex;gap:12px;align-items:start}.bottom .charge,.bottom .brake-meter{min-width:0;width:110px;font-size:7px}.bottom kbd{display:none}.bottom .charge>div,.bottom .brake-meter>div{margin:5px 0 3px}
+ .centered{padding:12px;overflow:auto;align-items:safe center}.centered>article{margin:auto}.centered h2{font-size:26px;margin:8px 0}.centered p{font-size:10px;margin-bottom:12px}.centered button{min-height:44px;margin:8px auto;padding:8px 12px}
+ .pause-panel{width:min(360px,95%);padding:12px 20px}.pause-panel .pause-settings{margin:8px 0}.pause-panel .setting{margin:10px 0}.pause-panel h2{font-size:18px!important}.pause-panel>small{display:none}
+ .screen{padding:16px;touch-action:pan-y}.menu-panel{max-height:none!important;width:min(560px,100%);padding:18px}.centered-page{align-items:safe center}.menu-panel button{min-height:44px}
+ #campaign-levels button{min-height:48px}.maps-screen .map-grid{grid-template-columns:repeat(3,1fr)}.maps-screen .map-card img{height:48px}.page-heading .back-button{position:static}.page-heading h1{font-size:14px!important;margin-top:8px}
+ .story-caption{padding:10px;max-height:70%;overflow:auto}.story-caption p{font-size:9px}.story-caption button{min-height:44px}
+ .music-toggle{min-height:44px!important}.music-toggle span{display:none}
+}
+@media(any-pointer:coarse) and (orientation:portrait){
+ #app{height:100dvh}#stage{width:100%;height:100dvh;max-height:none;aspect-ratio:auto}#game{width:100%;height:100%;object-fit:contain}
+ #hud{padding-top:max(16px,env(safe-area-inset-top))}.health-panel{left:12px;top:80px;width:120px}.bottom{top:118px;gap:12px}#mobile-tip{bottom:max(16px,env(safe-area-inset-bottom));max-width:45%}#mobile-tip span{display:inline;color:#a1b0c3}
+ .mission{max-width:70%;padding-top:5px}.mission small{font-size:7px}.mission h2{font-size:9px!important}
+ body #home-screen{justify-content:center;padding-top:60px;padding-bottom:60px}body #home-screen .main-logo{width:90%}body #home-screen .title-nav{width:min(290px,90%);gap:12px}body #home-screen .menu-button{min-height:52px;font-size:13px}body #home-screen #story-play{min-height:72px;font-size:20px}
+ body #home-screen .tagline{font-size:7px;margin:16px 0 24px}body #home-screen .music-note{font-size:7px;margin-top:20px}.version{font-size:7px;bottom:12px;right:12px}
+ .maps-screen .map-grid{grid-template-columns:repeat(2,1fr)}.maps-screen .map-card img{height:74px}.map-actions{flex-wrap:wrap}.map-actions button{width:100%}
+ #campaign-levels{grid-template-columns:1fr}.control-guide{grid-template-columns:1fr;gap:4px}.control-guide dd{margin-bottom:9px}.setting{grid-template-columns:85px 1fr 34px;gap:8px}
+ .story-cast img{height:120px;bottom:50%}.story-caption{bottom:8%;max-height:48%}.story-caption h1{font-size:12px!important}
+}
+@media(any-pointer:coarse) and (max-height:450px) and (orientation:landscape){
+ body #home-screen{padding-top:8px}body #home-screen .main-logo{width:30%}body #home-screen .tagline{margin:2px 0 6px}body #home-screen .title-nav{gap:5px}body #home-screen .menu-button{min-height:38px;padding:5px 12px}body #home-screen #story-play{min-height:46px;padding:6px 14px}body #home-screen .music-note{margin-top:7px}
+ #touch-actions{width:140px;gap:6px;bottom:max(8px,env(safe-area-inset-bottom))}#touch-actions button{min-height:44px}.touch-weapons{gap:6px}#touch-gun{font-size:8px}.music-toggle{top:6px}
+ .pause-panel .pause-settings{display:none}
+}

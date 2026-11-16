@@ -4,7 +4,15 @@ A browser action game where gun recoil is your movement engine. Play a ten-level
 
 ## Run locally
 
-Serve this directory, for example with `python -m http.server 8000`, then open `http://localhost:8000`. Use a keyboard and mouse. Progress, settings, and arena records save in this browser's local storage.
+Serve this directory, for example with `python -m http.server 8000`, then open `http://localhost:8000`. Use a keyboard and mouse, or the mobile touch controls. Progress, settings, and arena records save in this browser's local storage.
+
+## Phone and tablet controls
+
+Touch anywhere on the play area to create a floating joystick at that exact point. Drag in the direction you want to move; the gun automatically shoots the opposite way. The joystick disappears when you lift your finger, and each new touch creates a fresh origin. A small dead zone prevents accidental shots from a stationary thumb. This works regardless of the saved desktop control mode.
+
+Use your other thumb on **CHARGE** (hold and release), **BRAKE** (hold), or the previous/next weapon buttons. You can keep moving the joystick while using an action. A charge keeps your last joystick direction if you lift the movement thumb before releasing it. The pause button is always available during gameplay. Pausing, switching apps, rotating the phone, and cancelled touches release held controls safely.
+
+Landscape gives the largest play area. Portrait preserves the world's proportions and places controls in the space around it. Menus scroll independently; touching the game does not scroll the page.
 
 ## Flight control update
 
@@ -27,6 +35,7 @@ The story and its weapon-unlock challenges remain intact. Multiplayer is not imp
 | `levels.js`, `maps.js` | Arena geometry and themes |
 | `menu.js`, `menu.css` | Screens, settings, and menu audio |
 | `campaign.js`, `campaign.css` | Story and weapon progression |
+| `touch-controls.js`, `mobile.css` | Floating joystick, multi-touch actions, phone layouts |
 | `records.js` | Local arena performance and records |
 | `tests/` | Dependency-free gameplay regression checks |
 

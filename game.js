@@ -24,12 +24,13 @@ const GUNS=[
 assets.boss='boss.png';for(let i=0;i<3;i++)assets['extra'+i]='campaign-gun'+i+'.png';
 let clearDelay=0,bossClock=0,laser=null,shotSerial=0;
 let ready=false,state='menu',selected=0,level,stageIndex=0,player,blocks=[],objects=[],switches=[],bullets=[],particles=[],rings=[],cam=0,gun=0,charge=0,charging=false,cooldown=0,time=0,shots=0,toastTimer=0,mute=false,sfxVolume=.7,assist=true,flash=0,flashTimer=0;
+let touchController=null,touchAim=null,touchVector={x:0,y:0};
 let controlMode='directional',brakeEnergy=1,brakeDelay=0,brakeLocked=false;
 const brakeKeys=new Set(),chargeSources=new Set();
 const movementKeys=new Set();
 const moveCodes=new Set(['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowLeft','ArrowDown','ArrowRight']);
 function movement(){return{x:Number(movementKeys.has('KeyD')||movementKeys.has('ArrowRight'))-Number(movementKeys.has('KeyA')||movementKeys.has('ArrowLeft')),y:Number(movementKeys.has('KeyS')||movementKeys.has('ArrowDown'))-Number(movementKeys.has('KeyW')||movementKeys.has('ArrowUp'))};}
-function updateAim(){const m=controlMode==='directional'?movement():{x:0,y:0};aim=m.x||m.y?Math.atan2(-m.y,-m.x):Math.atan2(pointer.y-player.y,pointer.x+cam-player.x);return Boolean(m.x||m.y);}
+function updateAim(){const m=touchVector.x||touchVector.y?touchVector:controlMode==='directional'?movement():{x:0,y:0};aim=m.x||m.y?Math.atan2(-m.y,-m.x):(touchAim??Math.atan2(pointer.y-player.y,pointer.x+cam-player.x));return Boolean(m.x||m.y);}
 let pointer={x:760,y:440,left:false},lastTime=0,accumulator=0,aim=0;
 const counters={shots:0,broken:0,switches:0,explosions:0,ricochets:0,pushes:0,rescues:0,completed:0};
 function sound(i,volume=.22){if(mute)return;const a=sounds[audioNames[i]]?.cloneNode();if(a){a.volume=Math.min(1,volume*sfxVolume);a.play().catch(()=>{});}}
@@ -38,7 +39,7 @@ function sprite(key,x,y,w,h,alpha=1){const im=images[key];if(!im)return;ctx.glob
 function label(text,x,y,color='#a9c5cd',size=11){ctx.font=`${size}px GamePixel, monospace`;ctx.fillStyle=color;ctx.fillText(text,x,y);}
 function rect(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(x,y,w,h);}
 function createBlock(a,type='solid',i=0){return{x:a[0],y:a[1],w:a[2],h:a[3],type,id:i,alive:true,vx:0,vy:0,ox:a[0],oy:a[1],ax:a[4]||0,ay:a[5]||0,rate:a[6]||1};}
-function clearInput(){movementKeys.clear();brakeKeys.clear();chargeSources.clear();brakeLocked=false;pointer.left=false;charging=false;charge=0;}
+function clearInput(){touchAim=null;touchVector={x:0,y:0};touchController?.reset();movementKeys.clear();brakeKeys.clear();chargeSources.clear();brakeLocked=false;pointer.left=false;charging=false;charge=0;}
 function beginCharge(source){if(state!=='play')return;chargeSources.add(source);charging=true;}
 function releaseCharge(source){if(!chargeSources.delete(source)||chargeSources.size)return;if(state==='play'&&charging){updateAim();if(!fire(1+charge*1.25))toast('Gun is cooling down. Hold charge a little longer.');}charging=false;charge=0;}
 function resetPlayer(){clearInput();player={x:level.spawn[0],y:level.spawn[1],vx:0,vy:0,r:19,rotation:0,omega:0,mass:1};pointer.left=false;charge=0;charging=false;cam=0;}
@@ -47,11 +48,11 @@ function loadLevel(index,mode='play',mapIndex=selected){clearDelay=0;bossClock=0
  blocks=[...level.platforms.map(a=>createBlock(a)),...level.breakables.map(a=>createBlock(a,'breakable')),...level.doors.map((a,i)=>createBlock(a,'door',i)),...level.movers.map(a=>createBlock(a,'moving'))];
  switches=level.switches.map(([x,y],i)=>({x,y,id:i,on:false,r:20}));
  objects=level.objects.map(([x,y,type])=>({x,y,type,vx:0,vy:0,r:19,mass:1.5,rotation:0,omega:0,alive:true}));
- if(window.Campaign?.active){enemies.forEach(e=>e.type='hero');if(index===8){enemies[0].advanced=true;enemies[0].hp=enemies[0].maxHp=12;enemies[0].r=28;}if(index===9)enemies=[{x:930,y:420,vx:0,vy:0,r:65,mass:8,rotation:0,omega:0,hp:100,maxHp:100,type:'boss',cool:3,hop:5,alive:true}];}resetPlayer();state=mode;window.ArenaRecords?.begin(stageIndex,round,mode==='play'&&!window.Campaign?.active);updateGunUI();$('#menu').hidden=mode!=='menu';$('#hud').hidden=mode==='menu';$('#paused').hidden=true;$('#complete').hidden=true;$('#pause').hidden=mode!=='play';window.KickbackShell?.sync(state);
+ if(window.Campaign?.active){enemies.forEach(e=>e.type='hero');if(index===8){enemies[0].advanced=true;enemies[0].hp=enemies[0].maxHp=12;enemies[0].r=28;}if(index===9)enemies=[{x:930,y:420,vx:0,vy:0,r:65,mass:8,rotation:0,omega:0,hp:100,maxHp:100,type:'boss',cool:3,hop:5,alive:true}];}resetPlayer();state=mode;window.ArenaRecords?.begin(stageIndex,round,mode==='play'&&!window.Campaign?.active);updateGunUI();$('#menu').hidden=mode!=='menu';$('#hud').hidden=mode==='menu';$('#paused').hidden=true;$('#complete').hidden=true;$('#pause').hidden=mode!=='play';$('#touch-actions').hidden=mode!=='play';$('#mobile-tip').hidden=mode!=='play';window.KickbackShell?.sync(state);
  $('#sector').textContent=`WAVE ${round+1} / ${level.name.toUpperCase()}`;$('#gravity').textContent=(level.gravity/600).toFixed(2)+' G';updateObjective();
- $('#dead').hidden=true;if(mode==='play'){canvas.focus();toast('Clear the enemies · Shift: air brake · Space: charge · Q / E: weapons');}
+ $('#dead').hidden=true;if(mode==='play'){canvas.focus();toast(('ontouchstart' in window)?'Touch anywhere and drag to move · your gun fires opposite':'Clear the enemies · Shift: air brake · Space: charge · Q / E: weapons');}
 }
-function updateGunUI(){$('#guns').innerHTML=GUNS.map((g,i)=>`<button class="${i===gun?'active':''}" data-gun="${i}" ${window.Campaign?.active&&!window.Campaign.allowed(i)?'disabled':''} title="${g.sub}"><img src="assets/${assets[g.img]}" alt=""><b>${i+1} · ${g.name}</b><small>${g.sub}</small></button>`).join('');$('#guns').querySelectorAll('button').forEach(b=>b.onclick=()=>changeGun(+b.dataset.gun));}
+function updateGunUI(){$('#touch-gun').textContent=GUNS[gun].name;$('#guns').innerHTML=GUNS.map((g,i)=>`<button class="${i===gun?'active':''}" data-gun="${i}" ${window.Campaign?.active&&!window.Campaign.allowed(i)?'disabled':''} title="${g.sub}"><img src="assets/${assets[g.img]}" alt=""><b>${i+1} · ${g.name}</b><small>${g.sub}</small></button>`).join('');$('#guns').querySelectorAll('button').forEach(b=>b.onclick=()=>changeGun(+b.dataset.gun));}
 function changeGun(n){n=(n+7)%7;if(window.Campaign?.active&&!window.Campaign.allowed(n)){toast('Weapon locked. View Armory for its challenge.');return;}gun=n;updateGunUI();}
 function cycleGun(direction){for(let i=1;i<=GUNS.length;i++){const n=(gun+direction*i+GUNS.length)%GUNS.length;if(!window.Campaign?.active||window.Campaign.allowed(n)){changeGun(n);return;}}}
 function updateObjective(){const alive=enemies.filter(e=>e.alive).length;$('#objective').textContent=`Eliminate enemies: ${kills} / ${enemies.length}`;$('#hint').textContent=`${alive} remaining · ${health} HP · ${controlMode==='directional'?'WASD / arrows: recoil drive':'Mouse: aim · hold click: fire'} · Shift: brake`;$('#healthFill').style.width=health+'%';$('#healthText').textContent=health+' / 100 HP';}
@@ -150,14 +151,14 @@ function draw(){
  if(charging){ctx.strokeStyle='#ffac64';ctx.lineWidth=3;ctx.beginPath();ctx.arc(player.x,player.y,31,-Math.PI/2,-Math.PI/2+charge*TAU);ctx.stroke();}}
  }
  }ctx.restore();
- if(state==='play'){ctx.strokeStyle=GUNS[gun].color;ctx.lineWidth=1.4;ctx.beginPath();ctx.arc(pointer.x,pointer.y,8,0,TAU);ctx.moveTo(pointer.x-13,pointer.y);ctx.lineTo(pointer.x-5,pointer.y);ctx.moveTo(pointer.x+5,pointer.y);ctx.lineTo(pointer.x+13,pointer.y);ctx.stroke();}
+ if(state==='play'&&!$('#stage').classList.contains?.('touch-device')){ctx.strokeStyle=GUNS[gun].color;ctx.lineWidth=1.4;ctx.beginPath();ctx.arc(pointer.x,pointer.y,8,0,TAU);ctx.moveTo(pointer.x-13,pointer.y);ctx.lineTo(pointer.x-5,pointer.y);ctx.moveTo(pointer.x+5,pointer.y);ctx.lineTo(pointer.x+13,pointer.y);ctx.stroke();}
 }
 function frame(now){if(!lastTime)lastTime=now;accumulator+=Math.min((now-lastTime)/1000,.05);lastTime=now;while(accumulator>=1/120){tick(1/120);accumulator-=1/120;}draw();requestAnimationFrame(frame);}
-function pause(){if(state!=='play'&&state!=='paused')return;clearInput();state=state==='play'?'paused':'play';pointer.left=false;charging=false;charge=0;$('#paused').hidden=state!=='paused';$('#pause').hidden=state!=='play';window.KickbackShell?.sync(state);if(state==='play')canvas.focus();}
+function pause(){if(state!=='play'&&state!=='paused')return;clearInput();state=state==='play'?'paused':'play';pointer.left=false;charging=false;charge=0;$('#paused').hidden=state!=='paused';$('#pause').hidden=state!=='play';$('#touch-actions').hidden=state!=='play';$('#mobile-tip').hidden=state!=='play';window.KickbackShell?.sync(state);if(state==='play')canvas.focus();}
 function home(){pointer.left=false;charging=false;$('#toast').classList.remove('show');loadLevel(0,'menu');window.KickbackShell?.home();}
-canvas.addEventListener('pointermove',e=>{const r=canvas.getBoundingClientRect();pointer.x=(e.clientX-r.left)*W/r.width;pointer.y=(e.clientY-r.top)*H/r.height;});
-canvas.addEventListener('pointerdown',e=>{if(state!=='play')return;canvas.focus();canvas.setPointerCapture(e.pointerId);if(e.button===0)pointer.left=true;if(e.button===2)beginCharge('mouse');e.preventDefault();});
-window.addEventListener('pointerup',e=>{if(e.button===0)pointer.left=false;if(e.button===2)releaseCharge('mouse');});
+canvas.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;touchAim=null;const r=canvas.getBoundingClientRect(),scale=Math.min(r.width/W,r.height/H),left=r.left+(r.width-W*scale)/2,top=r.top+(r.height-H*scale)/2;pointer.x=(e.clientX-left)/scale;pointer.y=(e.clientY-top)/scale;});
+canvas.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||state!=='play')return;touchAim=null;canvas.focus();canvas.setPointerCapture(e.pointerId);if(e.button===0)pointer.left=true;if(e.button===2)beginCharge('mouse');e.preventDefault();});
+window.addEventListener('pointerup',e=>{if(e.pointerType==='touch')return;if(e.button===0)pointer.left=false;if(e.button===2)releaseCharge('mouse');});
 canvas.addEventListener('contextmenu',e=>e.preventDefault());canvas.addEventListener('wheel',e=>{if(state==='play'){e.preventDefault();cycleGun(e.deltaY>0?1:-1);}},{passive:false});
 function isEditing(e){return /^(INPUT|SELECT|TEXTAREA|BUTTON)$/.test(e.target?.tagName);}
 window.addEventListener('keydown',e=>{
@@ -176,7 +177,11 @@ window.addEventListener('keyup',e=>{
  if(e.code==='Space'){if(state==='play')e.preventDefault();releaseCharge('keyboard');}
  if(e.code==='ShiftLeft'||e.code==='ShiftRight'){brakeKeys.delete(e.code);if(!brakeKeys.size)brakeLocked=false;}
 });
-canvas.addEventListener('pointercancel',clearInput);
+canvas.addEventListener('pointercancel',e=>{if(e.pointerType!=='touch')clearInput();});
+touchController=window.TouchControls?.create({surface:canvas,root:$('#stage'),playing:()=>state==='play',onVector:v=>{touchVector=v;if(v.x||v.y)touchAim=Math.atan2(-v.y,-v.x);},onCycle:cycleGun,onAction:(action,phase)=>{
+ if(action==='charge'){if(phase==='down')beginCharge('touch');else if(phase==='up')releaseCharge('touch');else{chargeSources.delete('touch');if(!chargeSources.size){charging=false;charge=0;}}}
+ if(action==='brake'){if(phase==='down')brakeKeys.add('touch');else{brakeKeys.delete('touch');if(!brakeKeys.size)brakeLocked=false;}}
+}});
 window.addEventListener('blur',()=>{clearInput();if(state==='play')pause();});
 document.addEventListener('visibilitychange',()=>{if(document.hidden){clearInput();if(state==='play')pause();}});
 $('#retry').onclick=()=>loadLevel(round);$('#deadMenu').onclick=()=>{$('#dead').hidden=true;home();};$('#play').onclick=()=>{assist=$('#assist').checked;loadLevel(0);};document.querySelectorAll('[data-map]').forEach(b=>b.onclick=()=>{selected=+b.dataset.map;document.querySelectorAll('[data-map]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});loadLevel(0,'menu');});
