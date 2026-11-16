@@ -15,9 +15,9 @@ function boot(){
   const output=s.match(/^\[data-value="(.*?)"\]$/);if(output)return outputs.filter(e=>e.dataset.value===output[1]);
   return [];
  }};
- let sfx;
- const c={document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},Audio:class{constructor(){this.paused=true;this.currentTime=0;}play(){this.paused=false;return Promise.resolve()}pause(){this.paused=true}},KICKBACK:{setSfxVolume(v){sfx=v},setAssist(){}}};c.window=c;vm.createContext(c);vm.runInContext(source,c);
- return {buttons,sliders,shell:c.KickbackShell,sfx:()=>sfx};
+ let sfx,mode;
+ const c={document,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)},Audio:class{constructor(){this.paused=true;this.currentTime=0;}play(){this.paused=false;return Promise.resolve()}pause(){this.paused=true}},KICKBACK:{setSfxVolume(v){sfx=v},setAssist(){},setControlMode(v){mode=v}}};c.window=c;vm.createContext(c);vm.runInContext(source,c);
+ return {buttons,sliders,shell:c.KickbackShell,sfx:()=>sfx,mode:()=>mode,control:get('#control-mode')};
 }
 const click=(app,i=0)=>app.buttons[i].events.click();
 const synced=(app,muted)=>{for(const b of app.buttons){assert.equal(b.attrs['aria-pressed'],String(muted));assert.equal(b.attrs['aria-label'],muted?'Unmute music':'Mute music');assert.equal(b.status.textContent,muted?'MUSIC OFF':'MUSIC ON');}};
@@ -31,3 +31,5 @@ click(app);slider.value=45;slider.events.input();synced(app,false);assert.equal(
 app.shell.sync('play');assert(!app.shell.snapshot().musicPlaying,'menu music stays off during gameplay');app.shell.sync('paused');assert(app.shell.snapshot().musicPlaying);
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.equal((html.match(/data-music-toggle/g)||[]).length,2);
 console.log('PASS: synchronized home/pause music toggles, saved mute, restored volume, zero-volume recovery, slider sync, independent SFX and gameplay/pause audio.');
+
+app.control.value='mouse';app.control.events.change();assert.equal(app.mode(),'mouse');app=boot();assert.equal(app.mode(),'mouse','control mode survives reload');
